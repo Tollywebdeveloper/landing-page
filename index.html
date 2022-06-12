@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-------NAVBAR SECTION-->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURES</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="ctn">Contact</a></li>
+        </ul>
+
+        <img src="logo.png" class="menu-btn" alt="logo" height="40px" width="40px" />
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFTS</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-----EVENTS-->
+    <section class="event">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="event1.png" height="50%px" width="70%" alt="event1" />
+                <h4>Everest Camp</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="event2.png" alt="event2" height="50%" width="70%" />
+                <h4>Everest Camp</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+               
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <a href="#" class="ctn">Learn more</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col">
+                <h1>UPCOMING TOURS & DESTINATIONS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <div class="image-gallery">
+                    <img src="img1.png" alt="" height="300px" width="300px" />
+                    <img src="img1.png" alt="" height="300px" width="300px" />
+                    <img src="img1.png" alt=""height="300px" width="300px" />
+                    <img src="img1.png" alt=""  height="300px" width="300px"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>No 1, Omole yaba, Ondo City, Nigeria | Phone:08158867961 | ogundipetemitola@gmail.com</p>
+        <p>Copyright &copy; 2022 Travelling........</p>
+    </section>
+    <script>
+        const menuBtn=document.querySelector('.menu-btn');
+        const navLinks=document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', ()=> {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

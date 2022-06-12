@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*NAVBAR SECTION */
+/*Absolute uses top, left, buttom, right*/
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+}
+.logo {
+    margin-left: 2%;
+}
+ul {
+    list-style: none;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.active a {
+    color: crimson;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.nav-links li {
+   margin: 0 30px;
+   color: white;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("picture.png");
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header-content {
+    margin-top: 150px;
+    color: white;
+    text-align: center;
+}
+.header-content h2 {
+    /*vmin makes test or written test responsive */
+    font-size: 4vmin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header-content h1 {
+    /*vmin makes test or written test responsive */
+    font-size: 8vmin;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: crimson;
+    margin: auto;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+.menu-btn {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.ctn {
+    padding: 8px 15px;
+    margin-top: 15px;
+    background-color: crimson;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/**EVENTS */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:  space-between  ;
+
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.events .row {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 5vmin;
+    color: crimson;
+    margin:20px auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ .events .ctn {
+    padding-top: 30px;
+ }
+ p {
+     font-size: 3vmin;
+     text-align: center;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ .explore {
+     width: 100%;
+     height: 100vh;
+     background-image: url("explore.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: left;
+     display: flex;
+     align-items: center;
+     
+ }
+ .explore-content {
+     margin-left: 100px;
+     width: 75%;
+     padding: 50px;
+     color: white;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+ .explore-content .line {
+     margin-top: -50px;
+     margin-bottom: 25px;
+ }
+ .explore-content h1 {
+     color: white;
+     font-size:5vmin;
+     margin-bottom: 50px;
+ }
+ .explore-content p {
+     color: white;
+     font-size: 3vmin;
+ }
+ .explore-content .ctn {
+     margin-top: 20px;
+     margin-left: -25px;
+ }
+ .tours .image-gallery {
+     display: ;
+ }
+
+
+ .footer {
+     width: 100%;
+     min-height: 100px;
+     padding: 20px 75px;
+     background-color: gray;
+     text-align: center;
+ }
+ .footer p {
+     color: white;
+     margin: 20px auto;
+ }
+/*mobile view*/
+@media only screen and (max-width:850px) {
+    h1 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding-top: 0;
+    }
+    .logo {
+        position: absolute;
+        top:2px;
+        left: 5px;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(92, 92, 146);
+        /*margin-top -900 helps to navigate the navbar */
+        margin-top: -900px;
+        transition: all 2s ease;
+        
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 50%;
+    }
+    .nav-links li {
+        margin: 34px auto;
+        font-size: 22px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    /*EVENTS */
+    .row {
+        flex-direction: column;
+    }
+    .event .col img {
+        width: 100%;
+        height: 50%;
+    }
+    .explore-content p {
+        text-align: center;
+    }
+}
