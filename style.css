@@ -215,7 +215,7 @@ h4 {
         width: 100%;
         height: 100vh;
         justify-content: center;
-        background-color: rgb(92, 92, 146);
+        background-color: black;
         /*margin-top -900 helps to navigate the navbar */
         margin-top: -900px;
         transition: all 2s ease;
