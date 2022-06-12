@@ -279,5 +279,8 @@ h4 {
     }
     .footer p {
         line-break: normal;
+        position:absolute;
+        top:0;
+        bottom:0;
     }
 }
