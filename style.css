@@ -222,8 +222,9 @@ h4 {
         
     }
     .mobile-menu {
-        margin-top: 0px;
-        border-bottom-right-radius: 50%;
+        margin-top: -35px;
+        border-bottom-right-radius: 70%;
+        border:1px solid crimson
     }
     .nav-links li {
         margin: 34px auto;
